@@ -2,6 +2,7 @@
 
 [![CI Status](http://img.shields.io/travis/evilmint/ALSlidingNavigationBar.svg?style=flat)](https://travis-ci.org/evilmint/ALSlidingNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
+[![Compatibility](https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![License](https://img.shields.io/cocoapods/l/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![Platform](https://img.shields.io/cocoapods/p/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 
