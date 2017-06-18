@@ -6,5 +6,5 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/ALSlidingNavigationBar.xcworkspace -scheme ALSlidingNavigationBar_Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild clean build test -workspace Example/ALSlidingNavigationBar.xcworkspace -scheme ALSlidingNavigationBar-Example
 - pod lib lint
