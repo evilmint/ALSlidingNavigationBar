@@ -28,9 +28,9 @@ Create an object of type `ALSlidingNavigationBar` using the default constructor 
 
 ```swift
 self.slidingNavigationBar = ALSlidingNavigationBar(
-navigationBar: self.navigationController!.navigationBar,
-navigationItem: self.navigationItem,
-navigationBarView: self.navigationBarView
+    navigationBar: self.navigationController!.navigationBar,
+    navigationItem: self.navigationItem,
+    navigationBarView: self.navigationBarView
 )
 ```
 
