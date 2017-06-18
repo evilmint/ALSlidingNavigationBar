@@ -1,6 +1,6 @@
 # ALSlidingNavigationBar
 
-[![CI Status](http://img.shields.io/travis/Aleksander Lorenc/ALSlidingNavigationBar.svg?style=flat)](https://travis-ci.org/Aleksander Lorenc/ALSlidingNavigationBar)
+[![CI Status](http://img.shields.io/travis/evilmint/ALSlidingNavigationBar.svg?style=flat)](https://travis-ci.org/Aleksander Lorenc/ALSlidingNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![License](https://img.shields.io/cocoapods/l/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![Platform](https://img.shields.io/cocoapods/p/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
