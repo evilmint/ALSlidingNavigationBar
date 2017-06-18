@@ -10,6 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+* Swift >= 3.0
 
 ## Installation
 
@@ -18,6 +19,35 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "ALSlidingNavigationBar"
+```
+
+## Usage
+
+### Create ALSlidingNavigationBar
+Create an object of type `ALSlidingNavigationBar` using the default constructor and passing references of your navigation bar, navigation item and the view you would like to slide.
+
+```swift
+self.slidingNavigationBar = ALSlidingNavigationBar(
+navigationBar: self.navigationController!.navigationBar,
+navigationItem: self.navigationItem,
+navigationBarView: self.navigationBarView
+)
+```
+
+### Choose an anchor
+
+There are two anchor types to choose from - view or offset.
+
+#### View
+
+```swift
+self.slidingNavigationBar.setAnchor(view: self.anchorView)
+```
+
+#### Offset
+
+```swift
+self.slidingNavigationBar.setAnchor(offsetY: 150)
 ```
 
 ## Author

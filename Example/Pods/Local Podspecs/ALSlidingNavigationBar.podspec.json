@@ -1,0 +1,22 @@
+{
+  "name": "ALSlidingNavigationBar",
+  "version": "0.1.0",
+  "summary": "A short description of ALSlidingNavigationBar.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Aleksander Lorenc/ALSlidingNavigationBar",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aleksander Lorenc": "thaxsillion@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Aleksander Lorenc/ALSlidingNavigationBar.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ALSlidingNavigationBar/Classes/**/*"
+}

@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05AAF8992E4C0AEFDBAE22CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		05AAF8992E4C0AEFDBAE22CF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1F1723736D919FDEE5B2DF7B /* Pods_ALSlidingNavigationBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSlidingNavigationBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		506510155F6F9E941F230058 /* ALSlidingNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALSlidingNavigationBar.podspec; path = ../ALSlidingNavigationBar.podspec; sourceTree = "<group>"; };
+		506510155F6F9E941F230058 /* ALSlidingNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ALSlidingNavigationBar.podspec; path = ../ALSlidingNavigationBar.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ALSlidingNavigationBar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALSlidingNavigationBar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		740F84C04923D656E9075436 /* Pods-ALSlidingNavigationBar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSlidingNavigationBar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSlidingNavigationBar_Example/Pods-ALSlidingNavigationBar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		770E85243AE643C0F62A1339 /* Pods-ALSlidingNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSlidingNavigationBar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSlidingNavigationBar_Tests/Pods-ALSlidingNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7CEC1A23D9B12E35C8364C7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7CEC1A23D9B12E35C8364C7C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A67268A8C024629E07D20977 /* Pods_ALSlidingNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALSlidingNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17D5FB50913D958108641C2 /* Pods-ALSlidingNavigationBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSlidingNavigationBar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ALSlidingNavigationBar_Tests/Pods-ALSlidingNavigationBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ECEBDAAC42A87F3297E763BD /* Pods-ALSlidingNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALSlidingNavigationBar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ALSlidingNavigationBar_Example/Pods-ALSlidingNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R2CTR74H64;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R2CTR74H64;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -496,10 +498,12 @@
 			baseConfigurationReference = ECEBDAAC42A87F3297E763BD /* Pods-ALSlidingNavigationBar_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2CTR74H64;
 				INFOPLIST_FILE = ALSlidingNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.unwrappedsoftware.testproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -510,10 +514,12 @@
 			baseConfigurationReference = 740F84C04923D656E9075436 /* Pods-ALSlidingNavigationBar_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2CTR74H64;
 				INFOPLIST_FILE = ALSlidingNavigationBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.unwrappedsoftware.testproject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -523,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 770E85243AE643C0F62A1339 /* Pods-ALSlidingNavigationBar_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R2CTR74H64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +550,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E17D5FB50913D958108641C2 /* Pods-ALSlidingNavigationBar_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = R2CTR74H64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

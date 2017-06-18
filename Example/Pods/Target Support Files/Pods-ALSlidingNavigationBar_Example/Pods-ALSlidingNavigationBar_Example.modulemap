@@ -1,0 +1,6 @@
+framework module Pods_ALSlidingNavigationBar_Example {
+  umbrella header "Pods-ALSlidingNavigationBar_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
