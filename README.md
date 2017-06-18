@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![Platform](https://img.shields.io/cocoapods/p/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 
+![Running pod example](ALSlidingNavigationBar.gif "Running pod example")
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
