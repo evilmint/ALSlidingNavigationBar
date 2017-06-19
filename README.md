@@ -26,6 +26,10 @@ pod "ALSlidingNavigationBar"
 
 ## Usage
 
+```swift
+import ALSlidingNavigationBar
+```
+
 ### Create ALSlidingNavigationBar
 Create an object of type `ALSlidingNavigationBar` using the default constructor and passing references of your navigation bar, navigation item and the view you would like to slide.
 
