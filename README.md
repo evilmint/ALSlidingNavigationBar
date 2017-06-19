@@ -57,6 +57,14 @@ self.slidingNavigationBar.setAnchor(view: self.anchorView)
 self.slidingNavigationBar.setAnchor(offsetY: 150)
 ```
 
+### Call the `didScroll` method
+
+Call the `didScroll` method on every scroll update, (e.g. `didScroll` method from `UIScrollViewDelegate`)
+
+```swift
+self.slidingNavigationBar.didScroll(offset: self.scrollView.contentOffset.y, convertView: self.view) {
+```
+
 ## Author
 
 Aleksander Lorenc, thaxsillion@gmail.com
