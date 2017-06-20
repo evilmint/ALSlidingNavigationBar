@@ -41,6 +41,19 @@ self.slidingNavigationBar = ALSlidingNavigationBar(
 )
 ```
 
+*Important*
+
+The rect of the passed _navigationBarView_ must have its origin at zero and its dimensions must be the same as navigationBar's frame's.
+
+```swift
+CGRect(
+    x: 0,
+    y: 0,
+    width: self.navigationController!.navigationBar.frame.width,
+    height: self.navigationController!.navigationBar.frame.height
+)
+```
+
 ### Choose an anchor
 
 There are two anchor types to choose from - view or offset.
