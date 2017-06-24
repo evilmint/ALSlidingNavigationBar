@@ -474,6 +474,7 @@
 				0B0C63F91EFE3F1400C64D76 /* ALSlidingNavigationBar.swift */,
 			);
 			name = Source;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		10435EF2FCF6FE3F3B8BBA9465426A73 /* Support Files */ = {
@@ -614,7 +615,7 @@
 				E8D51E2B9714EE93A652126ECA7333FA /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ALSlidingNavigationBar";
+			path = "Target Support Files/ALSlidingNavigationBar";
 			sourceTree = "<group>";
 		};
 		8EBEDD7CDD38628083C1BAAC15789DE2 /* SwiftSupport */ = {
@@ -628,7 +629,8 @@
 		94636A54C3796B39D63D147CA3FF621A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F5F72691E62872CF769E26E52FE5DCE2 /* ALSlidingNavigationBar */,
+				0B0C63F81EFE3F0800C64D76 /* Source */,
+				8C55959692E600E6DA0ED6BC3004D0D4 /* Support Files */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -815,16 +817,6 @@
 				C2770AEF977D9751DB909937B4E13AF1 /* UIImage+Snapshot.m */,
 			);
 			name = Core;
-			sourceTree = "<group>";
-		};
-		F5F72691E62872CF769E26E52FE5DCE2 /* ALSlidingNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				0B0C63F81EFE3F0800C64D76 /* Source */,
-				8C55959692E600E6DA0ED6BC3004D0D4 /* Support Files */,
-			);
-			name = ALSlidingNavigationBar;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -43,17 +43,16 @@ open class ALSlidingNavigationBar {
     open func didScroll(offset: CGFloat, convertView: UIView) {
         let anchorOffset: CGFloat = self.getAnchorOffset(convertView: convertView)
         let offsetY = min(self.navigationBarView.frame.height + self.navigationBar.frame.height, max(0, offset - anchorOffset))
-        let navigationBarFrame = self.navigationBar.frame
 
         self.navigationBarView.center = CGPoint(
-            x: navigationBarFrame.width / 2.0,
+            x: self.navigationBar.frame.width / 2.0,
             y: max(
-                navigationBarFrame.height / 2.0,
-                navigationBarFrame.height + self.navigationBarView.frame.height / 2.0 - offsetY
+                self.navigationBar.frame.height / 2.0,
+                self.navigationBar.frame.height + self.navigationBarView.frame.height / 2.0 - offsetY
             )
         )
 
-        self.navigationBarView.isHidden = (offsetY > 0)
+        self.navigationBarView.isHidden = (offsetY < 0)
     }
 
     open func getAnchorOffset(convertView: UIView) -> CGFloat {
@@ -62,8 +61,8 @@ open class ALSlidingNavigationBar {
             frame = CGPoint(x: frame.x, y: frame.y - anchorView.bounds.height)
 
             return frame.y
-        } else if let anchorOffsetY = self.anchorOffsetY {
-            return anchorOffsetY
+        } else if self.anchorOffsetY != nil {
+            return self.anchorOffsetY
         }
 
         return 0.0

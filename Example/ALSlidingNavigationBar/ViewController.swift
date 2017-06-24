@@ -35,14 +35,16 @@ class ViewController: UIViewController {
             UITapGestureRecognizer(target: self, action: #selector(self.navigationBarViewClicked))
         )
 
+        self.navigationItem.titleView = self.navigationBarView
+
         self.slidingNavigationBar = ALSlidingNavigationBar(
             navigationBar: self.navigationController!.navigationBar,
             navigationItem: self.navigationItem,
             navigationBarView: self.navigationBarView
         )
 
-        self.slidingNavigationBar.setAnchor(view: self.relationView)
-        self.slidingNavigationBar.setAnchor(offsetY: 0)
+        // self.slidingNavigationBar.setAnchor(view: self.relationView)
+        self.slidingNavigationBar.setAnchor(offsetY: 100)
     }
 
     func navigationBarViewClicked() {
