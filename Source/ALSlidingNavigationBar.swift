@@ -52,7 +52,7 @@ open class ALSlidingNavigationBar {
             )
         )
 
-        self.navigationBarView.isHidden = (offsetY < 0)
+        self.navigationBarView.isHidden = (offsetY <= 0)
     }
 
     open func getAnchorOffset(convertView: UIView) -> CGFloat {
@@ -62,7 +62,7 @@ open class ALSlidingNavigationBar {
 
             return frame.y
         } else if self.anchorOffsetY != nil {
-            return self.anchorOffsetY
+            return self.anchorOffsetY!
         }
 
         return 0.0

@@ -35,8 +35,6 @@ class ViewController: UIViewController {
             UITapGestureRecognizer(target: self, action: #selector(self.navigationBarViewClicked))
         )
 
-        self.navigationItem.titleView = self.navigationBarView
-
         self.slidingNavigationBar = ALSlidingNavigationBar(
             navigationBar: self.navigationController!.navigationBar,
             navigationItem: self.navigationItem,
