@@ -2,4 +2,3 @@ excluded:
   - Example/Pods/
   - Pods/
   - Example/Pods
-  - .
