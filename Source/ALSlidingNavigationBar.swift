@@ -8,6 +8,11 @@
 
 import UIKit
 
+@objc public protocol ALSlidingNavigationBarDelegate: class {
+    @objc optional func navigationBarViewChangedVisibility(isVisible: Bool)
+    @objc optional func offsetDidChange(_ offset: CGFloat)
+}
+
 open class ALSlidingNavigationBar {
     var navigationBar: UINavigationBar!
     var navigationBarView: UIView!
@@ -15,6 +20,8 @@ open class ALSlidingNavigationBar {
 
     open var anchorView: UIView?
     open var anchorOffsetY: CGFloat?
+
+    public weak var delegate: ALSlidingNavigationBarDelegate?
 
     public init(navigationBar: UINavigationBar, navigationItem: UINavigationItem, navigationBarView: UIView) {
         self.navigationBarView = navigationBarView
@@ -42,9 +49,11 @@ open class ALSlidingNavigationBar {
 
     open func didScroll(offset: CGFloat, convertView: UIView) {
         let anchorOffset: CGFloat = self.getAnchorOffset(convertView: convertView)
+
+        let offsetYRaw = (offset - anchorOffset)
         let offsetY = min(
             self.navigationBarView.frame.height + self.navigationBar.frame.height,
-            max(0, offset - anchorOffset)
+            max(0, offsetYRaw)
         )
 
         self.navigationBarView.center = CGPoint(
@@ -55,7 +64,14 @@ open class ALSlidingNavigationBar {
             )
         )
 
-        self.navigationBarView.isHidden = (offsetY <= 0)
+        let isNavigationBarViewHidden = (offsetY <= 0)
+
+        self.delegate?.offsetDidChange?(offsetYRaw)
+
+        if isNavigationBarViewHidden != self.navigationBarView.isHidden {
+            self.delegate?.navigationBarViewChangedVisibility?(isVisible: !isNavigationBarViewHidden)
+            self.navigationBarView.isHidden = isNavigationBarViewHidden
+        }
     }
 
     open func getAnchorOffset(convertView: UIView) -> CGFloat {

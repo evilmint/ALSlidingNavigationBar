@@ -93,6 +93,7 @@
                         <outlet property="navigationItem" destination="F6p-tR-IJk" id="lyv-dz-B3S"/>
                         <outlet property="relationView" destination="Ggh-K7-vsA" id="mWG-vb-obC"/>
                         <outlet property="scrollView" destination="Gfi-9Z-ChE" id="e5b-3C-7Ab"/>
+                        <outlet property="secondRectangleView" destination="Pwn-TT-cxd" id="hJk-LX-8No"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSK-xI-oQC" sceneMemberID="firstResponder"/>

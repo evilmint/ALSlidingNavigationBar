@@ -12,6 +12,7 @@ import ALSlidingNavigationBar
 class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var relationView: UILabel!
+    @IBOutlet weak var secondRectangleView: UIView!
 
     var navigationBarView: UILabel!
     var slidingNavigationBar: ALSlidingNavigationBar!
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
             navigationItem: self.navigationItem,
             navigationBarView: self.navigationBarView
         )
+        self.slidingNavigationBar.delegate = self
 
         // self.slidingNavigationBar.setAnchor(view: self.relationView)
         self.slidingNavigationBar.setAnchor(offsetY: 100)
@@ -53,5 +55,15 @@ class ViewController: UIViewController {
 extension ViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         self.slidingNavigationBar.didScroll(offset: scrollView.contentOffset.y, convertView: self.view)
+    }
+}
+
+extension ViewController: ALSlidingNavigationBarDelegate {
+    func navigationBarViewChangedVisibility(isVisible: Bool) {
+        self.secondRectangleView.backgroundColor = isVisible ? UIColor.lightGray : UIColor.darkGray
+    }
+
+    func offsetDidChange(_ offset: CGFloat) {
+        print("Offset changed and is valued at \(offset)")
     }
 }
