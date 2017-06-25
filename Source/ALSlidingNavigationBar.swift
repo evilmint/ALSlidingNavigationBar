@@ -13,6 +13,7 @@ import UIKit
     @objc optional func offsetDidChange(_ offset: CGFloat)
 }
 
+// codebeat:disable[TOO_MANY_IVARS]
 open class ALSlidingNavigationBar {
     var navigationBar: UINavigationBar!
     var navigationBarView: UIView!
@@ -87,3 +88,4 @@ open class ALSlidingNavigationBar {
         return 0.0
     }
 }
+// codebeat:enable[TOO_MANY_IVARS]
