@@ -1,6 +1,6 @@
 # ALSlidingNavigationBar
 
-<a href="https://codebeat.co/projects/github-com-evilmint-alslidingnavigationbar-master"><img alt="codebeat badge" src="https://codebeat.co/badges/8f4cd86f-cd8b-4495-89c3-e207d7f2d06e" /></a>
+[![codebeat badge](https://codebeat.co/badges/8f4cd86f-cd8b-4495-89c3-e207d7f2d06e)](https://codebeat.co/projects/github-com-evilmint-alslidingnavigationbar-master)
 [![CI Status](http://img.shields.io/travis/evilmint/ALSlidingNavigationBar.svg?style=flat)](https://travis-ci.org/evilmint/ALSlidingNavigationBar)
 [![Version](https://img.shields.io/cocoapods/v/ALSlidingNavigationBar.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
 [![Compatibility](https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat)](http://cocoapods.org/pods/ALSlidingNavigationBar)
